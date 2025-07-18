@@ -1,0 +1,44 @@
+# === Python backend ===
+backend/venv/                # Python virtual environment
+__pycache__/                 # Python bytecode cache
+*.pyc
+*.pyo
+*.pyd
+# Ignore Python virtual environments
+venv/
+**/venv/
+
+# === FastAPI static files (audio uploads/outputs) ===
+backend/app/static/          # Denoised and uploaded audio files (temporary)
+
+# === Machine Learning model artifacts and temp files ===
+ml_model/*.ckpt              # Checkpoints
+ml_model/*.log               # Log files
+ml_model/*.wav               # Audio test files
+ml_model/*.npy               # Numpy arrays
+ml_model/__pycache__/        # Python cache in ml_model
+
+# === Jupyter/IPython ===
+*.ipynb_checkpoints
+*.ipynb
+
+# === Node/React frontend ===
+frontend/node_modules/       # Node dependencies
+frontend/dist/               # Production build output
+frontend/.env                # Frontend environment variables
+
+# === Logs ===
+*.log
+
+# === OS and editor files ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Environment variables ===
+.env
+.env.*

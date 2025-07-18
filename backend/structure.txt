@@ -1,0 +1,15 @@
+fastapi_app/
+├── app/
+│   ├── main.py              ← App entrypoint
+│   ├── api/                 ← Routes (like urls.py)
+│   │   ├── __init__.py
+│   │   └── upload.py        ← A router file (like views.py + urls.py)
+│   ├── models/              ← Pydantic models (like Django models/serializers)
+│   │   └── audio.py
+│   ├── services/            ← Business logic (e.g., ML model handling)
+│   │   └── audio_denoise.py
+│   ├── static/              ← For uploaded or processed files
+│   ├── config.py            ← Configs, env loading, etc.
+│   └── utils.py             ← Helpers
+├── requirements.txt
+└── run.py                   ← uvicorn launcher
