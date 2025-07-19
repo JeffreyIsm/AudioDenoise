@@ -13,6 +13,7 @@ origins = [
     #any url that can access the backend
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://audio-denoise.vercel.app/",
 ]
 
 #Cors prohibits unauthorized from accessing API
